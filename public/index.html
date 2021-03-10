@@ -20,19 +20,39 @@
     </header> 
 
     <main aria-live="polite">
-      <section id="mainImage"><img src="tbd" alt="an image of a person with the EH and GT logo watermarks"></section>
-      <section id="givingPitch"><p>Why EH is great and why you should especially give on GT</p><div class="donateButton"></div></section>
-      <section id="impactRecord"><div><ul>Statistic</ul><ul>Statistic</ul><ul>Statistic</ul></div></section>
-      <section id="personalStory">
-            <img src="tbd" alt="an image of the person telling the story">
-            <article>
-                <p>The story of so-and-so.</p>
-            </article>
+
+      <nav id="navBar">
+        <div id="about">About</div>
+        <div id="anasStory">Ana's Story</div>
+        <div id="howYouCanHelp">How You Can Help</div>
+        <div id="sponsorLevels">Sponsorship Levels</div>
+      </nav>
+
+      <section id="textBox"></section>
+
+      <div id="Give Today">Give Today</div>
+
+      <section id="givingForm">
+        <iframe id="form-6a2a0cf6-c9f0-44ac-884f-dd06f25f4b20" sandbox="allow-scripts allow-same-origin allow-popups" class="blackbaud-donation-form" title="Donation Form"
+        style="background-color: white; max-width: 600px; min-width: 320px; width: 100%; height: 100%; border: none;">
+        </iframe>
+        <script>
+          var url = 'https://host.nxt.blackbaud.com/donor-form?svcid=renxt&formId=6a2a0cf6-c9f0-44ac-884f-dd06f25f4b20&envid=p-CGog7MA-MUufU5LYfQ_pBQ';
+          var iframe = document.getElementById('form-6a2a0cf6-c9f0-44ac-884f-dd06f25f4b20');
+          var bbemlParser = new RegExp('[?&]bbeml=([^&#/]*)').exec(document.location.search);
+          var bbeml = bbemlParser ? decodeURI(bbemlParser[1]) || 0 : '';
+            iframe.src = url + '&referral=' + document.referrer + '&bbeml=' + bbeml;
+            window.addEventListener('message', function (event) {
+          if (event.data === 'checkout loaded') {
+            document.getElementById('form-6a2a0cf6-c9f0-44ac-884f-dd06f25f4b20').scrollIntoView()
+              }
+          if (event.data.messageType === 'height-change') {
+            document.getElementById('form-6a2a0cf6-c9f0-44ac-884f-dd06f25f4b20').style.minHeight = event.data.message.height;
+              }
+            });
+          </script>
       </section>
-      <section id="GT-Reiteration">
-            <h2>#GivingTuesday</h2>
-            <div class="donateButton"></div>
-      </section>
+      
     </main>
 
     <footer id="footer" aria-live="polite">
