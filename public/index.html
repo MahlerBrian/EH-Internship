@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This is a landing page for EngenderHealth's Internship Fund Giving Form">
     <meta name="keywords" content="birth control,reproductive rights,repro,undergrad,stipend,Internship,donate,charity,nonprofit,women's health">
-    <title>EngenderHealth Internship Fund</title>
-    <script src="https://code.jquery.com/jquery.min.js"></script>    
+    <title>EngenderHealth Internship Fund</title>  
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery.min.js"></script>  
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="app.js" async></script>
   </head>
@@ -22,15 +22,19 @@
     <main aria-live="polite">
 
       <nav id="navBar">
-        <div id="about">About</div>
-        <div id="anasStory">Ana's Story</div>
-        <div id="howYouCanHelp">How You Can Help</div>
-        <div id="sponsorLevels">Sponsorship Levels</div>
+        <ul>
+          <button> ☰ </button>
+          <li><a href="#about">About</a></li>
+          <li><a href="#anasStory">Ana's Story</a></li>
+          <li><a href="#howYouCanHelp">How You Can Help</a></li>
+          <li><a href="#sponsorshipLevels">Sponsorship Levels</a></li>
+          <li><a href="#donate">Give Today</a></li>
+        </ul>
       </nav>
 
       <section id="textBox"></section>
 
-      <div id="Give Today">Give Today</div>
+    
 
       <section id="givingForm">
         <iframe id="form-6a2a0cf6-c9f0-44ac-884f-dd06f25f4b20" sandbox="allow-scripts allow-same-origin allow-popups" class="blackbaud-donation-form" title="Donation Form"

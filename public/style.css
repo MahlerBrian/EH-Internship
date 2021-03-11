@@ -9,11 +9,6 @@
         width: 100%;
         margin: 0;
         background: lightcoral;
-        text-align: center;
-        background-image: url('/images/coverPhoto.png');
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        background-attachment: fixed;
         opacity: 0.9;
     } 
 
@@ -22,14 +17,42 @@
         display: none;
         width: 100%;
     }
-    
-    #navBar{
-        display: inline;
-    }
+   
+   nav{
+       width: 100vw;
+   } 
 
-    #textBox{
-        background: bisque;
-        text-align: left;
+   ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+}
+
+   li{
+       display: none;
+       list-style-type: none;
+       margin: 0 2vw;
+       font-size: 2vw;
+   }
+
+   a{
+    text-decoration: none;
+    display: block;
+   }
+ 
+   a:hover{
+    background-color: rgb(255, 0, 128);
+}
+
+    button{
+        display: block;
+        padding: 2vw;
+        font-size: 3vw;
+        background-color: yellowgreen;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
     }
 }
 
@@ -44,11 +67,33 @@
         position: absolute;
         display: none;
         width: 100%;
-    
     }
     
-    #navBar{
-        display: inline;
+    nav{
+        width: 100vw;
+        background-color: lightgreen;
+    } 
+
+    ul{
+        display: flex;
+        padding: 5px;
+    }
+
+    li{
+        list-style-type: none;
+        margin: 0 2vw;
+        font-size: 2vw;
+    }
+
+    a{
+        text-decoration: none;
+        color: blue;
+        padding: 
+        2vw;
+    }
+
+    a:hover{
+        background-color: rgb(255, 0, 128);
     }
 
     #textBox{
@@ -56,4 +101,11 @@
         text-align: left;
     }
 
+    button{
+        display: none;
+    }
+
+    #givingform{
+        display: none;
+    }
 }

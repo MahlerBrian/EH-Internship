@@ -1,17 +1,17 @@
+$("document").ready(function(){
+    $("button").click(function(){
+        if($("button").text() == "☰"){
+            $("button").text("✖");
+          }else{        
+            $("button").text("☰");      
+          }
+          $("li").toggle("slow");
+     });
 
-
-function toggleGiving() {
-    $('#Give Today').click(function() {
-        $('#GivingForm').toggle();
-    }
-}
-
-$(function() {
-    toggleGiving();
-    handleAbout();
-})
-
-
+    
+     
+     
+  });
 
 
 
